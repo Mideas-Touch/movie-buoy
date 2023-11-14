@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    align-content: center;
     padding: 0.5rem;
+    width: 100%;
 }
 
 .logo{
@@ -16,6 +17,8 @@
 
 .Searchbox{
     width: 80%;
+    display: flex;
+    justify-content: center;
     /* align-self: center; */
 }
     input {
