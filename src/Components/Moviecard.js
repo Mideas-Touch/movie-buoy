@@ -4,7 +4,24 @@ function Moviecard(){
 
 
     return <>
-        <h2>Some header</h2>
+        <img
+            id="poster"
+            src=""
+            >
+        </img>
+
+        <i>staricon</i>
+        <span>favicon</span>
+        <h2>Movie Title</h2>
+        <button
+            id="watchlist"
+        >
+            + Watchlist
+        </button>
+        <button
+        >
+            play
+        </button>
     </>
 }
 
