@@ -1,0 +1,10 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    width: 150px;
+}
+
+/* #poster{
+    height: 300px;
+} */
