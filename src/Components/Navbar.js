@@ -10,14 +10,6 @@ function Navbar(){
                 >
                     MovieBuoy
             </h1>
-            <form
-                className="Searchbox"
-            >
-                <input 
-                    type="text" 
-                    name="search" 
-                    placeholder="Search..." />
-            </form>
         </div>
     </>
 

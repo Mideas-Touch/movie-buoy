@@ -1,0 +1,28 @@
+.Searchbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+}
+input {
+    padding-left: 35px;
+    color: rgb(189, 158, 158);
+    box-shadow: 2px 3px 28px 1px rgba(0, 0, 0, 0.1);
+    border: 0px solid transparent;
+    border-radius: 5px;
+
+    height: 15vh;
+    width: 90%;
+    font-size: 40px;
+
+    transition: all .2s ease;
+
+    &::placeholder {
+        color: #B3B3B3;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.3);
+    }
+}
