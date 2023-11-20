@@ -1,24 +1,27 @@
 .card{
     display: flex;
     flex-direction: column;
-    height:400px;
+    padding: 2rem;
+    margin: 0.5rem;
+    height:48rem;
     width: 20vw;
 }
 
 #poster{
     width:100%;
+    height: 50%;
 }
 
 @media only screen and (max-width: 600px) {
+    #poster{
+        height: 60%;
+    }
     .card{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        height: 150px;
+        height: 400px;
         width: 80%;
-        margin-top: 5rem;
+
     }
-  }
-  body{
-    min-height: 100vh;
-  }
+}
