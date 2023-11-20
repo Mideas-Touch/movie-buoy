@@ -10,7 +10,7 @@ function Moviecard(){
         <img
             id="poster"
             src={image_1}
-            alt="placeholder-image"
+            alt="placeholder"
             >
         </img>
 
