@@ -1,4 +1,4 @@
-import React from "react";
+import React, {  useEffect, useState } from "react";
 import image_1 from "../images/image_1.jpeg"
 import "../css/Moviecard.css";
 import { MdFavoriteBorder } from "react-icons/md"
@@ -7,7 +7,25 @@ import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
 
 function Moviecard(){
+    const [movies, setMovies] = useState[{}]
 
+
+    const apiUrl = "https://api.themoviedb.org/3/movie/11?api_key=6b8f7686219cfd2cee079462061c954e"
+
+    // async function getMovies(url){
+    //     const response = await fetch(url)
+    //     const data = await response.json()
+    //     console.log(data)
+    // }
+    useEffect(()=>{
+        getMovies(apiUrl)
+    }, [])
+
+    const getMovies = (url)=>{
+        fetch(url)
+        .then(result => result.json())
+        .then(data => console.log(data))
+    }
 
     return <>
     <div className="card">
