@@ -36,3 +36,15 @@
     width: 45%;
    }
 }
+
+@media only screen and (min-width: 992px){
+    #poster{
+        height: 50%;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+}
