@@ -1,6 +1,10 @@
 import React from "react";
 import image_1 from "../images/image_1.jpeg"
 import "../css/Moviecard.css";
+import { MdFavoriteBorder } from "react-icons/md"
+import { CiStar } from "react-icons/ci";
+import { CiPlay1 } from "react-icons/ci";
+import { CiBookmarkPlus } from "react-icons/ci";
 
 function Moviecard(){
 
@@ -13,19 +17,29 @@ function Moviecard(){
             alt="placeholder"
             >
         </img>
-
-            <i>staricon</i>
-            <span>favicon</span>
+            <div
+                className="icons-section"
+            >
+                <CiStar />
+                <MdFavoriteBorder />
+            </div>
             <h2>Movie Title</h2>
-            <button
+            <div
+                className="buttons"
+            >
+                <button
                 id="watchlist"
             >
-                + Watchlist
-            </button>
-            <button
+                <CiBookmarkPlus /> Watchlist
+                </button>
+                <span></span>
+                <span></span>
+                <button
             >
-                play
-            </button>
+                <CiPlay1 />
+                </button>
+
+            </div>
     </div>
        
     </>
