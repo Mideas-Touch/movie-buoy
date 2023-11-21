@@ -7,19 +7,25 @@ import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
 
 function Moviecard(){
-    // const [movies, setMovies] = useState[{}]
+    const [movies, setMovies] = useState([]);
+    useEffect(()=>{
+        getMovies(apiUrl)
+    }, [])
 
-
-    const apiUrl = 'https://api.themoviedb.org/3/movie/11?api_key=6b8f7686219cfd2cee079462061c954e'
+    const id =11
+    const apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8f7686219cfd2cee079462061c954e`
 
     async function getMovies(url){
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
+        const movies = [...Array(20)].map((_, i) =>({
+            movieId: data.id
+        }
+        ))
+        console.log(movies)
+        setMovies(movies)
     }
-    useEffect(()=>{
-        getMovies(apiUrl)
-    }, [])
 
     return <>
     <div className="card">
