@@ -1,5 +1,5 @@
 import React, {  useEffect, useState } from "react";
-import image_1 from "../images/image_1.jpeg"
+// import image_1 from "../images/image_1.jpeg"
 import "../css/Moviecard.css";
 import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
@@ -61,7 +61,11 @@ function Moviecard(){
             ))
             setMovies(movies)
             console.log(movies)
-        }  
+
+            const cardList = movies.map(movie => {
+              return <MovieCard key={movieId} date={date} title={title} description={description} rating={rating} poster={poster} time={time} average_vote={average_vote}/>
+              })
+        } 
         
         
     }
@@ -70,7 +74,7 @@ function Moviecard(){
     <div className="card">
         <img
             id="poster"
-            src={image_1}
+            src={mvoie.poster}
             alt="placeholder"
             >
         </img>
