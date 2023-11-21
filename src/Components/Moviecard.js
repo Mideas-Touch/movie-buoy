@@ -8,23 +8,32 @@ import { CiBookmarkPlus } from "react-icons/ci";
 
 function Moviecard(){
     const [movies, setMovies] = useState([]);
+
+    const ids = [11, 13, 15];
+
+    const batchLoadMovies = (ids) =>{
+            ids?.forEach(element => {
+                console.log(element)
+                getMovies(element)
+            }); 
+    }
+
+   
     useEffect(()=>{
-        getMovies(apiUrl)
-    }, [])
+        batchLoadMovies(ids)
+    })
 
-    const id =11
-    const apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8f7686219cfd2cee079462061c954e`
 
-    async function getMovies(url){
-        const response = await fetch(url)
+    async function getMovies(id){
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=6b8f7686219cfd2cee079462061c954e`)
         const data = await response.json()
         console.log(data)
-        const movies = [...Array(20)].map((_, i) =>({
-            movieId: data.id
-        }
-        ))
-        console.log(movies)
+        // const movies = [...Array(5)].map((_, i) =>({
+        //     movieId: data.id
+        // }
+        // ))
         setMovies(movies)
+        console.log(movies)
     }
 
     return <>
