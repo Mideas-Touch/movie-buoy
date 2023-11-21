@@ -9,7 +9,15 @@ import { CiBookmarkPlus } from "react-icons/ci";
 function Moviecard(){
     const [movies, setMovies] = useState([]);
 
-    const ids = [11, 13, 15];
+    let idsArray = [];
+
+    const generateRandomIds = (arr)=>{
+        for (let i = 0; i < 20; i++) {
+            arr.push(Math.floor(Math.random() * 100) + 1);
+        }
+        console.log(idsArray)
+    }
+
 
     const batchLoadMovies = (ids) =>{
             ids?.forEach(element => {
@@ -20,7 +28,8 @@ function Moviecard(){
 
    
     useEffect(()=>{
-        batchLoadMovies(ids)
+        generateRandomIds(idsArray)
+        batchLoadMovies(idsArray)
     })
 
 
