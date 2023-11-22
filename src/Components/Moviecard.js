@@ -59,12 +59,9 @@ function Moviecard(){
     
             }
             ))
-            setMovies(movies)
+            setMovies(movies)  
             console.log(movies)
-
-            const cardList = movies.map(movie => {
-              return <MovieCard key={movieId} date={date} title={title} description={description} rating={rating} poster={poster} time={time} average_vote={average_vote}/>
-              })
+            
         } 
         
         
@@ -74,7 +71,7 @@ function Moviecard(){
     <div className="card">
         <img
             id="poster"
-            src={mvoie.poster}
+            src={movie.poster}
             alt="placeholder"
             >
         </img>
