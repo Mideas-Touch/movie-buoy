@@ -1,29 +1,10 @@
-// import React from "react";
-// import Moviecard from "../Components/Moviecard"
-
-// function Movies(movie){
-
-//     // const {movieId, date, title, description, rating, poster, time, average_vote} = movie;
-
-//     // const cardList = movies?.map(movie => {
-//     //     return <Moviecard key={movie.movieId} date={movie.date} title={movie.title} description={movie.description} rating={movie.rating} 
-//     //     poster={movie.poster} time={movie.time} average_vote={movie.average_vote}/>
-//     // })
-
-//     return <>
-//     <Moviecard />
-//     </>
-// }
-
-// export default Movies;
-
 import React, {  useEffect, useState } from "react";
 // import image_1 from "../images/image_1.jpeg"
 import "../css/Moviecard.css";
-import { MdFavoriteBorder } from "react-icons/md"
-import { CiStar } from "react-icons/ci";
-import { CiPlay1 } from "react-icons/ci";
-import { CiBookmarkPlus } from "react-icons/ci";
+// import { MdFavoriteBorder } from "react-icons/md"
+// import { CiStar } from "react-icons/ci";
+// import { CiPlay1 } from "react-icons/ci";
+// import { CiBookmarkPlus } from "react-icons/ci";
 import Moviecard from "./Moviecard";
 
 function Movies(){
@@ -87,9 +68,26 @@ function Movies(){
         
     }
 
+    // const cardList = () => movies?.map(movie => {
+    //     return <Moviecard key={movie.movieId} date={movie.date} title={movie.title} description={movie.description} rating={movie.rating} 
+    //     poster={movie.poster} time={movie.time} average_vote={movie.average_vote}/>
+    // })
+
     return <>
-    {/* <div className="card">
-        <img
+    <div className="card">
+        {movies?.map(movie =>(
+            <Moviecard
+                key={movie.movieId}
+                date={movie.date} 
+                title={movie.title} 
+                description={movie.description} 
+                rating={movie.rating} 
+                poster={movie.poster} 
+                time={movie.time} 
+                average_vote={movie.average_vote}
+            />
+        ))}
+        {/* <img
             id="poster"
             src={poster}
             alt="placeholder"
@@ -117,9 +115,8 @@ function Movies(){
                 <CiPlay1 />
                 </button>
 
-            </div>
-    </div> */}
-    <Moviecard />
+            </div> */}
+    </div>
        
     </>
 }
