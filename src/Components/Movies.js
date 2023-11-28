@@ -68,10 +68,6 @@ const Movies = () =>{
         
     }
 
-    // const cardList = () => movies?.map(movie => {
-    //     return <Moviecard key={movie.movieId} date={movie.date} title={movie.title} description={movie.description} rating={movie.rating} 
-    //     poster={movie.poster} time={movie.time} average_vote={movie.average_vote}/>
-    // })
 
     return <>
     <div className="card">
@@ -87,35 +83,6 @@ const Movies = () =>{
                 average_vote={movie.average_vote}
             />
         ))}
-        {/* <img
-            id="poster"
-            src=""
-            alt="placeholder"
-            >
-        </img>
-            <div
-                className="icons-section"
-            >
-                <CiStar />
-                <MdFavoriteBorder />
-            </div>
-            <h2>Movie Title</h2>
-            <div
-                className="buttons"
-            >
-                <button
-                id="watchlist"
-            >
-                <CiBookmarkPlus /> Watchlist
-                </button>
-                <span></span>
-                <span></span>
-                <button
-            >
-                <CiPlay1 />
-                </button>
-
-            </div> */}
     </div>
        
     </>

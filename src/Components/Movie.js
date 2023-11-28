@@ -11,7 +11,7 @@ function Movie({key, date, title, description, poster}){
 
 
     return <>
-        <div>
+        <div key={key}>
             <img
             id="poster"
             src={poster}
