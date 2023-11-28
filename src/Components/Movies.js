@@ -33,6 +33,14 @@ const Movies = () =>{
             }); 
     }
 
+    const removeDuplicates = (movieArray) =>{
+        return movieArray?.filter((item,
+            index) => movieArray.indexOf(item) === index);
+    }
+
+    // function removeDuplicates(arr) {
+    //     return [...new Set(arr)];
+    // }
    
     useEffect(()=>{
         generateRandomIds(idsArray)
@@ -48,7 +56,7 @@ const Movies = () =>{
         const data = await response.json()
         // console.log(data)
         if (data.id){
-            const movies = [...Array(data)].map((_, i) =>({
+            const movies = [...Array(1), data].map((_, i) =>({
                 movieId: data.id,
                 date: data.release_date,
                 title: data.original_title,
@@ -59,6 +67,7 @@ const Movies = () =>{
                 average_vote: data.vote_average
     
             }))
+            removeDuplicates(movies)
             console.log(movies)
             console.log(typeof(movies))
             setMovies(movies)  
