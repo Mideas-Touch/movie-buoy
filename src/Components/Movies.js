@@ -23,10 +23,10 @@ const Movies = () =>{
 
 
     const batchLoadMovies = (ids) =>{
-        removeDuplicates(ids)
-            ids?.forEach(element => {
+            removeDuplicates(ids)
+            ids?.forEach(id => {
                 // console.log(element)
-                getMovies(element)
+                getMovies(id)
             }); 
     }
 
