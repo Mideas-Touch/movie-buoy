@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from "react";
 import image_1 from "../images/image_1.jpeg"
-// import "../css/Moviecard.css";
+import "../css/Movie.css";
 import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
@@ -11,7 +11,9 @@ function Movie({key, date, title, description, poster, backdrop_path}){
 
 
     return <>
-        <div key={key}>
+        <div 
+            className="card"
+            key={key}>
             <img
             width={300}
             height={400}

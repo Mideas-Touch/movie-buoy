@@ -1,6 +1,7 @@
 import React, {  useEffect, useState } from "react";
 // import image_1 from "../images/image_1.jpeg"
 import Movie from "./Movie";
+import "../css/Movies.css"
 
 const Movies = () =>{
     const [movies, setMovies] = useState([]);
@@ -22,6 +23,7 @@ const Movies = () =>{
 
 
     const batchLoadMovies = (ids) =>{
+        removeDuplicates(ids)
             ids?.forEach(element => {
                 // console.log(element)
                 getMovies(element)
@@ -32,10 +34,6 @@ const Movies = () =>{
         return movieArray?.filter((item,
             index) => movieArray.indexOf(item) === index);
     }
-
-    // function removeDuplicates(arr) {
-    //     return [...new Set(arr)];
-    // }
    
     useEffect(()=>{
         generateRandomIds(idsArray)
@@ -75,7 +73,7 @@ const Movies = () =>{
 
 
     return <>
-    <div className="card">
+    <div className="cards">
         {movies?.map(movie =>(
             <Movie
                 key={movie.movieId}
