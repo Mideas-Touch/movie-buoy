@@ -1,10 +1,5 @@
 import React, {  useEffect, useState } from "react";
 // import image_1 from "../images/image_1.jpeg"
-import "../css/Moviecard.css";
-import { MdFavoriteBorder } from "react-icons/md"
-import { CiStar } from "react-icons/ci";
-import { CiPlay1 } from "react-icons/ci";
-import { CiBookmarkPlus } from "react-icons/ci";
 import Movie from "./Movie";
 
 const Movies = () =>{
@@ -63,6 +58,7 @@ const Movies = () =>{
                 description: data.overview,
                 rating: data.popularity,
                 poster: data.poster_path,
+                backdrop: data.backdrop_path,
                 time: data.runtime,
                 average_vote: data.vote_average
     

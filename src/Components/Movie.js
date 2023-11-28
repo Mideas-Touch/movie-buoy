@@ -7,14 +7,16 @@ import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
 import Movies from "./Movies";
 
-function Movie({key, date, title, description, poster}){
+function Movie({key, date, title, description, poster, backdrop_path}){
 
 
     return <>
         <div key={key}>
             <img
+            width={300}
+            height={400}
             id="poster"
-            src={poster}
+            src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
             alt="placeholder"
             >
         </img>
