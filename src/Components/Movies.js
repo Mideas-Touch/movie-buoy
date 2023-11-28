@@ -5,7 +5,7 @@ import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
-import Moviecard from "./Movie";
+import Movie from "./Movie";
 
 const Movies = () =>{
     const [movies, setMovies] = useState([]);
@@ -76,7 +76,7 @@ const Movies = () =>{
     return <>
     <div className="card">
         {movies?.map(movie =>(
-            <Moviecard
+            <Movie
                 key={movie.movieId}
                 date={movie.date} 
                 title={movie.title} 
@@ -87,7 +87,7 @@ const Movies = () =>{
                 average_vote={movie.average_vote}
             />
         ))}
-        <img
+        {/* <img
             id="poster"
             src=""
             alt="placeholder"
@@ -115,7 +115,7 @@ const Movies = () =>{
                 <CiPlay1 />
                 </button>
 
-            </div>
+            </div> */}
     </div>
        
     </>
