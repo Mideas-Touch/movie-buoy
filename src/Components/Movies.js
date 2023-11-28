@@ -7,7 +7,7 @@ import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
 import Moviecard from "./Movie";
 
-export const Movies = () =>{
+const Movies = () =>{
     const [movies, setMovies] = useState([]);
     const [errors, setErrors] = useState(null)
 
@@ -121,4 +121,4 @@ export const Movies = () =>{
     </>
 }
 
-// export default Movies;
+export default Movies;

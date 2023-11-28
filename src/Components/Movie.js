@@ -7,11 +7,11 @@ import image_1 from "../images/image_1.jpeg"
 // import { CiBookmarkPlus } from "react-icons/ci";
 import Movies from "./Movies";
 
-function Movie({Moviecard}){
+function Movie({}){
 
 
     return <>
-        <Moviecard />
+        {/* <h1>Hello World</h1> */}
     </>
 }
 
