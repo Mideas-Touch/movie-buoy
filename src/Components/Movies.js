@@ -1,13 +1,13 @@
 import React, {  useEffect, useState } from "react";
 // import image_1 from "../images/image_1.jpeg"
 import "../css/Moviecard.css";
-// import { MdFavoriteBorder } from "react-icons/md"
-// import { CiStar } from "react-icons/ci";
-// import { CiPlay1 } from "react-icons/ci";
-// import { CiBookmarkPlus } from "react-icons/ci";
-import Moviecard from "./Moviecard";
+import { MdFavoriteBorder } from "react-icons/md"
+import { CiStar } from "react-icons/ci";
+import { CiPlay1 } from "react-icons/ci";
+import { CiBookmarkPlus } from "react-icons/ci";
+import Moviecard from "./Movie";
 
-function Movies(){
+export const Movies = () =>{
     const [movies, setMovies] = useState([]);
     const [errors, setErrors] = useState(null)
 
@@ -48,7 +48,7 @@ function Movies(){
         const data = await response.json()
         // console.log(data)
         if (data.id){
-            const movies = [...Array(1)].map((_, i) =>({
+            const movies = [...Array(data)].map((_, i) =>({
                 movieId: data.id,
                 date: data.release_date,
                 title: data.original_title,
@@ -58,9 +58,9 @@ function Movies(){
                 time: data.runtime,
                 average_vote: data.vote_average
     
-            }
-            ))
+            }))
             console.log(movies)
+            console.log(typeof(movies))
             setMovies(movies)  
             
         } 
@@ -87,9 +87,9 @@ function Movies(){
                 average_vote={movie.average_vote}
             />
         ))}
-        {/* <img
+        <img
             id="poster"
-            src={poster}
+            src=""
             alt="placeholder"
             >
         </img>
@@ -115,10 +115,10 @@ function Movies(){
                 <CiPlay1 />
                 </button>
 
-            </div> */}
+            </div>
     </div>
        
     </>
 }
 
-export default Movies;
+// export default Movies;
