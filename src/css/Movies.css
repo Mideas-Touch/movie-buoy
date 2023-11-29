@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* padding: 1.5rem;
-    margin: 0.5rem; */
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    /*margin: 0.5rem; */
     /* height:48rem;
     width: 18vw; */
 }

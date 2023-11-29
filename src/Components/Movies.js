@@ -11,11 +11,11 @@ const Movies = () =>{
 
     const generateRandomIds = (arr)=>{
         for (let i = 0; i < 10; i++) {
-            arr.push(Math.floor(Math.random() * 100) + 1);
+            arr.push(Math.floor(Math.random() * 10) + 1);
         }
         console.log(idsArray)
 
-        if (idsArray.length >= 10){
+        if (idsArray.length >= 5){
             // console.log(idsArray)
             batchLoadMovies(idsArray)
         }

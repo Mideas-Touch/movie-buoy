@@ -1,28 +1,35 @@
 .card{
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    margin: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #ffffff;
     border-radius: 5px;
-    /* height:48rem;
-    width: 18vw; */
+    height:35rem;
+    /*width: 18vw; */
 }
+
 
 .icons-section{
     display: flex;
     justify-content: space-between;
-    padding:0.2rem;
+    /* padding:0.2rem; */
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
 }
 
 button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-items: center;
     border-radius: 5px;
     gap: 5%;
     height: 80%;
-    padding: 0.8rem;
     width: 100%;
 }
 
