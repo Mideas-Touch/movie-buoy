@@ -18,7 +18,8 @@ function Movie({key, date, title, description, poster, backdrop_path}){
             width={300}
             height={400}
             id="poster"
-            src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
+            // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
+            src={image_1}
             alt="placeholder"
             >
         </img>
@@ -40,6 +41,7 @@ function Movie({key, date, title, description, poster, backdrop_path}){
                 <span></span>
                 <span></span>
                 <button
+                    id="play"
             >
                 <CiPlay1 />
                 </button>

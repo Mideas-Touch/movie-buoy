@@ -47,9 +47,9 @@ const Movies = () =>{
             })
 
         const data = await response.json()
-        // console.log(data)
+        console.log(data)
         if (data.id){
-            const movies = [...Array(1), data].map((_, i) =>({
+            const movies = [...Array(1), {data}].map((_, i) =>({
                 movieId: data.id,
                 date: data.release_date,
                 title: data.original_title,
