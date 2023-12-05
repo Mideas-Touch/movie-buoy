@@ -7,10 +7,9 @@ import "../css/Home.css"
 function Home(){
 
     return <>
-        <Navbar />
+        
         <h1>Recommended</h1>
         <h2>Watchlist</h2>
-        <Movies />
         <h2>Favorites</h2>
         <Search />
     </>
