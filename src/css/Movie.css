@@ -1,25 +1,22 @@
 .card{
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: #ffffff;
+    justify-self: center;
+    align-self: center;
+    background-color: rgb(186, 184, 184);
     border-radius: 5px;
-    height:35rem;
-    /*width: 18vw; */
 }
 
 
 .icons-section{
     display: flex;
     justify-content: space-between;
-    /* padding:0.2rem; */
+    padding:0.5rem;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
 }
 
 button{
@@ -28,78 +25,99 @@ button{
     justify-content: center;
     justify-items: center;
     border-radius: 5px;
-    gap: 5%;
-    height: 80%;
     width: 100%;
+    outline: none;
+    border-style: hidden;
 }
 
 #watchlist{
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
+    width: 90%;
+    height: 3rem;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(243, 243, 243);
 }
 
 #play{
     background-color: transparent;
-    outline: none;
     align-self: center;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    font-size:x-large;
 }
 
-span{
-    height: 0.5rem;
-}
 
-/* #poster{
-    width:100%;
-    height: 50%;
-} */
-
-/* @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
     #poster{
-        height: 60%;
+        height: 50%;
+        width: 100%;
     }
     .card{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        height: 35rem;
-        width: 60%;
+        justify-self: center;
+        align-self: center;
+        height: 100vh;
+        width: 80%;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
 
     }
 }
+
+
 
 @media only screen and (min-width: 600px) {
     #poster{
         height: 60%;
+        width: 100%;
     }
     .card{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        padding: 2.5rem;
-        height: 35rem;
-        width: 60%;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
+        width: 30%;
+        height: 70vh;
 
     }
 }
 
+
+
 @media only screen and (min-width: 768px){
-   #poster{
-        height: 50%;
-   }
-   .card{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-   }
+    #poster{
+        height: 60%;
+        width: 100%;
+    }
+    .card{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
+        width: 35%;
+        height: 70vh;
+
+    }
 }
+
 
 @media only screen and (min-width: 992px){
     #poster{
         height: 50%;
+        width: 100%;
     }
-
     .card{
-        display: flex;
+        display:flex;
         flex-direction: column;
-        width: 25%;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
+        width: 15%;
+        height: 70vh;
+
     }
-} */
+}

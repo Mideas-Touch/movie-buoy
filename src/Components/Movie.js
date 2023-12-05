@@ -15,8 +15,8 @@ function Movie({key, date, title, description, poster, backdrop_path}){
             className="card"
             key={key}>
             <img
-            width={300}
-            height={400}
+            // width={300}
+            // height={400}
             id="poster"
             // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
             src={image_1}
@@ -29,7 +29,7 @@ function Movie({key, date, title, description, poster, backdrop_path}){
                 <CiStar />
                 <MdFavoriteBorder />
             </div>
-            <h2>{title}</h2>
+            <h2>Some title</h2>
             <div
                 className="buttons"
             >
