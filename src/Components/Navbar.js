@@ -1,17 +1,12 @@
 import React from "react";
 import "../css/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar(){
 
     return <>
         <div id="Navbar" Link>
-            <h1 
-                className="logo"
-                >
-                    <NavLink to="/" exact>MovieBuoy</NavLink>
-                    
-            </h1>
+                    <Link to="/" exact><h1 className="logo">MovieBuoy</h1></Link>
         </div>
     </>
 
