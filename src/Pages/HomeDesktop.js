@@ -40,8 +40,11 @@ function HomeDesktop(){
                     <CiStar />
                     <CiStar />
                 </div>
+            </div>
+            <div id="overview">
                 <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel turpis nec augue gravida ullamcorper. Integer tempus elit elit, eu ultricies tortor porttitor at. Integer sed efficitur massa. Mauris imperdiet justo mauris. 
-                Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam. </p>
+                    Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam.
+                </p>
             </div>
 
             <div
