@@ -1,5 +1,4 @@
 import React from "react";
-import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";

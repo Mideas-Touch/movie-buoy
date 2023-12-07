@@ -1,11 +1,11 @@
-import React, {  useEffect, useState } from "react";
+// import React, {  useEffect, useState } from "react";
 import image_1 from "../images/image_1.jpeg"
 import "../css/Movie.css";
 import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
-import Movies from "./Movies";
+// import Movies from "./Movies";
 
 function Movie({key, date, title, description, poster, backdrop_path}){
 

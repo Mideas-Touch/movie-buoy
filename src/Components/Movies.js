@@ -37,7 +37,7 @@ const Movies = () =>{
    
     useEffect(()=>{
         generateRandomIds(idsArray)
-    }, [])
+    })
 
 
     async function getMovies(id){
