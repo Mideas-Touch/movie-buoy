@@ -15,16 +15,16 @@ function Home(){
     return <>
     <div className="container">
     <div 
-            id="card"
-            >
-            <img
-            // width={500}
-            // height={400}
-            id="poster"
-            // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
-            src={image_1}
-            alt="placeholder"
-            >
+        id="player-card"
+        >
+        <img
+        // width={500}
+        // height={400}
+        id="poster"
+        // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
+        src={image_1}
+        alt="placeholder"
+        >
         </img>
         <div className="title-love">
             <h2 id="title">Some title</h2>
@@ -54,9 +54,9 @@ function Home(){
                 <button
                 id="watchlist"
             >
-                <CiBookmarkPlus /> Watchlist
+                <i><CiBookmarkPlus /></i> Watchlist
                 </button>
-                
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel turpis nec augue gravida ullamcorper. Integer tempus elit elit, eu ultricies tortor porttitor at. Integer sed efficitur massa. Mauris imperdiet justo mauris. Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam. </p>
 
             </div>
         </div>

@@ -62,8 +62,8 @@ const Movies = () =>{
     
             }))
             removeDuplicates(movies)
-            console.log(movies)
-            console.log(typeof(movies))
+            // console.log(movies)
+            // console.log(typeof(movies))
             setMovies(movies)  
             
         } 
