@@ -25,7 +25,7 @@ function HomeDesktop(){
                 </img>
             </div>
         </div>
-        <div className="container" id="right">
+        <div className="" id="right">
             <div className="title-love">
                 <h2 id="title">Some title</h2>
                 <h3 id="timestamp">00:00</h3>
