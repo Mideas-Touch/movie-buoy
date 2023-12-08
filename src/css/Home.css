@@ -2,12 +2,13 @@ body{
     background-color: rgb(238, 234, 234);
 }
 
-.container{
+.home-container{
     display: flex;
     flex-direction: column;
-    /* position: relative; */
-    /* height: 10vh; */
-    /* background-color: blue; */
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-color: blue;
 }
 
 .icons-section{
@@ -64,13 +65,19 @@ body{
 
 
 @media only screen and (max-width: 600px) {
-    .container{
+    .home-container{
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height:100vh;
+        min-height:130vh;
         position: relative;
+        background-color: brown;
     }
+
+    /* .container > #player-card > #poster{
+        width: 100%;
+        justify-self: center;
+    } */
 
 
     #player-card{
@@ -84,7 +91,7 @@ body{
 
 
 @media only screen and (min-width: 600px) {
-    .container{
+    .home-container{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -101,7 +108,7 @@ body{
 
 
 @media only screen and (min-width: 768px){
-    .container{
+    .home-container{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -121,11 +128,11 @@ body{
 
 
 @media only screen and (min-width: 992px){
-    .container{
+    .home-container{
         display: flex;
         flex-direction: row;
         position: relative;
-        height: 100vh;
+        height: 120vh;
         /* background-color: blue; */
     }
     #player-card{

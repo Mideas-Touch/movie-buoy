@@ -19,7 +19,7 @@ function Movie({key, date, title, description, poster, backdrop_path}){
             // height={400}
             id="poster"
             // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
-            src={image_1}
+            // src={image_1}
             alt="placeholder"
             >
         </img>

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-// import Home from "./Pages/Home"
+import Home from "./Pages/Home"
 import Movies from "./Components/Movies";
 import HomeDesktop from "./Pages/HomeDesktop";
 
@@ -9,7 +9,8 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<HomeDesktop />} /> 
+        <Route exact path="/" element={<HomeDesktop />} />
+        <Route exact path="/m" element={<Home />} /> 
         <Route exact path="/movies" element={<Movies />}  /> 
       </Routes>
     </>
