@@ -1,12 +1,12 @@
 body{
-    background-color: rgb(238, 234, 234);
+    background-color: rgb(182, 87, 87);
 }
 
 .home-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     background-color: blue;
 }

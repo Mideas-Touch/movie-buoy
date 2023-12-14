@@ -24,14 +24,12 @@ function Home(){
                 alt="placeholder"
                 >
                 </img>
+            </div>
             <div className="title-love">
                 <h2 id="title">Some title</h2>
                 <i id="love"><MdFavoriteBorder /></i>
             </div>
             
-            <div>
-                
-            </div>
                 <div
                     id="star-timestamp-section"
                 >
@@ -57,11 +55,14 @@ function Home(){
                 >
                     <i><CiBookmarkPlus /></i> Watchlist
                     </button>
-                    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel turpis nec augue gravida ullamcorper. Integer tempus elit elit, eu ultricies tortor porttitor at. Integer sed efficitur massa. Mauris imperdiet justo mauris. Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam. </p>
-
+                    {/* <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel turpis nec augue gravida ullamcorper. Integer tempus elit elit, eu ultricies tortor porttitor at. Integer sed efficitur massa. Mauris imperdiet justo mauris. Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam. </p> */}
                 </div>
-            </div>
+                <div className="">
+                        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel turpis nec augue gravida ullamcorper. Integer tempus elit elit, eu ultricies tortor porttitor at. Integer sed efficitur massa. Mauris imperdiet justo mauris. Aenean ligula lectus, viverra in sodales eget, venenatis feugiat quam. </p>
+                </div>
+            
         </div>
+        
         
         
         {/* <h1>Recommended</h1>
