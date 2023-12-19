@@ -11,7 +11,7 @@ function Movie({key, date, title, description, poster, backdrop_path}){
 
     return <>
         <div 
-            className="w-1/2"
+            className="w-1/2 flex flex-col"
             key={key}>
             <img
             className="w-3/5"

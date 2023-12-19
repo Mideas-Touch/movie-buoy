@@ -73,7 +73,7 @@ const Movies = () =>{
 
 
     return <>
-    <div className="cards">
+    <div className="flex flex-row h-full">
         {movies?.map(movie =>(
             <Movie
                 key={movie.movieId}
