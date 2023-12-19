@@ -2,7 +2,7 @@ import React from "react";
 // import Movies from "../Components/Movies"
 // import Navbar from "../Components/Navbar";
 // import Search from "../Components/Search"
-import "../css/Home.css"
+// import "../css/Home.css"
 
 import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";

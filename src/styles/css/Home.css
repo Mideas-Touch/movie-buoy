@@ -71,13 +71,12 @@ body{
         width: 100%;
         min-height:130vh;
         position: relative;
-        background-color: brown;
+        background-color: green;
     }
 
-    /* .container > #player-card > #poster{
+    .home-container > img{
         width: 100%;
-        justify-self: center;
-    } */
+    }
 
 
     #player-card{

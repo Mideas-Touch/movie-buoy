@@ -3,7 +3,7 @@ import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 import { CiBookmarkPlus } from "react-icons/ci";
 import image_1 from "../images/image_1.jpeg"
-import "../css/HomeDesktop.css"
+// import "../css/HomeDesktop.css"
 
 function HomeDesktop(){
 

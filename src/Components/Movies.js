@@ -1,7 +1,7 @@
 import React, {  useEffect, useState } from "react";
 // import image_1 from "../images/image_1.jpeg"
 import Movie from "./Movie";
-import "../css/Movies.css"
+// import "../css/Movies.css"
 
 const Movies = () =>{
     const [movies, setMovies] = useState([]);

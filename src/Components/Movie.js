@@ -1,6 +1,5 @@
 // import React, {  useEffect, useState } from "react";
-import image_1 from "../images/image_1.jpeg"
-import "../css/Movie.css";
+
 import { MdFavoriteBorder } from "react-icons/md"
 import { CiStar } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
