@@ -13,7 +13,7 @@ import image_1 from "../images/image_1.jpeg"
 function Home(){
 
     return <>
-        <div className="home-container">
+        <div className="">
             <div id="player-card">
                 <img
                 // width={500}

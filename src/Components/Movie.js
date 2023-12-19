@@ -11,13 +11,14 @@ function Movie({key, date, title, description, poster, backdrop_path}){
 
     return <>
         <div 
-            className="card"
+            className="w-1/2"
             key={key}>
             <img
+            className="w-3/5"
             // width={300}
             // height={400}
             id="poster"
-            // src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
+            src={`https://image.tmdb.org/t/p/original/${poster || backdrop_path}`}
             // src={image_1}
             alt="placeholder"
             >
